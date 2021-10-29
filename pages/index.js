@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Coffe Connoisseur</title>
+        <title>Coffee Connoisseur</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
@@ -21,6 +21,14 @@ export default function Home() {
           handleOnClick={handleOnBannerBtnClick}
         />
       </main>
+      <div className={styles.heroImage}>
+        <Image
+          src='/static/hero-image.png'
+          alt='hero-img'
+          width={700}
+          height={400}
+        />
+      </div>
     </div>
   );
 }
